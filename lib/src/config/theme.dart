@@ -10,7 +10,9 @@ class AppTheme {
   );
   static final ThemeData darkTheme = ThemeData(
     fontFamily: "Manrope",
-    primaryColor: Colors.deepPurple[600],
+    primaryColor: Colors.deepPurple[400],
+    floatingActionButtonTheme:
+        FloatingActionButtonThemeData(backgroundColor: Colors.deepPurple[400]),
     scaffoldBackgroundColor: Colors.deepPurple,
   );
 }
