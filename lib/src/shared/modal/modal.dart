@@ -8,7 +8,7 @@ void modal(BuildContext context, Widget children) {
     context: context,
     builder: (BuildContext context) {
       return Container(
-            height: MediaQuery.of(context).size.height * 50,
+            height: MediaQuery.of(context).size.height * .4,
             child: SingleChildScrollView(
               physics:BouncingScrollPhysics(),
           child: children,

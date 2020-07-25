@@ -36,12 +36,66 @@ class _HomeState extends State<Home> {
                     ),
                     Text(
                       "You can write your diary or a Todo here.",
-                      style:
-                          TextStyle(fontSize: 18,color: Colors.grey),
+                      style: TextStyle(fontSize: 18, color: Colors.grey),
                     ),
-                    TextField(
-                      keyboardType: TextInputType.multiline,
-                      maxLines: null,
+                    SizedBox(
+                      height: 20,
+                    ),
+                    InkWell(
+                      borderRadius: BorderRadius.circular(60),
+                      onTap: () {},
+                      child: ClipOval(
+                        child: Container(
+                          height: 120.0, // height of the button
+                          width: 120.0, // width of the button
+                          child: Center(
+                            child: Icon(
+                              Icons.mic,
+                              color: Colors.red,
+                              size: 90,
+                            ),
+                          ),
+                        ),
+                      ),
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                      children: [
+                        InkWell(
+                          borderRadius: BorderRadius.circular(40),
+                          onTap: () {},
+                          child: ClipOval(
+                            child: Container(
+                              height: 80.0, // height of the button
+                              width: 80.0, // width of the button
+                              child: Center(
+                                child: Icon(
+                                  Icons.clear,
+                                  color: Colors.red,
+                                  size: 40,
+                                ),
+                              ),
+                            ),
+                          ),
+                        ),
+                        InkWell(
+                          borderRadius: BorderRadius.circular(40),
+                          onTap: () {},
+                          child: ClipOval(
+                            child: Container(
+                              height: 80.0, // height of the button
+                              width: 80.0, // width of the button
+                              child: Center(
+                                child: Icon(
+                                  Icons.check,
+                                  color: Colors.green,
+                                  size: 40,
+                                ),
+                              ),
+                            ),
+                          ),
+                        ),
+                      ],
                     )
                   ],
                 ),
